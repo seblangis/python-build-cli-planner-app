@@ -63,3 +63,8 @@ typings/
 
 # next.js build output
 .next
+
+reminders.csv
+__pycache__
+venv
+.idea

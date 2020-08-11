@@ -1,5 +1,6 @@
 import csv
 
+
 def list_reminders():
     f = open("reminders.csv", "r")
 
@@ -12,8 +13,8 @@ def list_reminders():
                 print(e.ljust(32), end=' ')
         print()
 
-def add_reminder(text):
 
-    with open('reminders.csv', 'a+', newline='\n') as file:
+def add_reminder(text):
+    with open('reminders.csv', 'a+') as file:
         writer = csv.writer(file)
         writer.writerow([text])
